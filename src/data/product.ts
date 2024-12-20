@@ -15,28 +15,28 @@ export const variants: Variant[] = [
 	{
 		color: 'purple',
 		class: 'bg-[#6366F1]',
-		image: '/src/assets/images/purple.jpg',
+		image: 'images/purple.jpg',
 		rating: 4,
 		price: 5, // base price for purple (S size)
 	},
 	{
 		color: 'cyan',
 		class: 'bg-[#22D3EE]',
-		image: '/src/assets/images/cyan.jpg',
+		image: 'images/cyan.jpg',
 		rating: 3,
 		price: 5, // base price for cyan (S size)
 	},
 	{
 		color: 'blue',
 		class: 'bg-[#3B82F6]',
-		image: '/src/assets/images/blue.jpg',
+		image: 'images/Blue.jpg',
 		rating: 5,
 		price: 5, // base price for blue (S size)
 	},
 	{
 		color: 'black',
 		class: 'bg-[#000000]',
-		image: '/src/assets/images/Blackv2.jpg',
+		image: 'images/Blackv2.jpg',
 		rating: 3,
 		price: 5, // base price for black (S size)
 	},

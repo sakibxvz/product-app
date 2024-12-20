@@ -2,22 +2,22 @@ const variants = [
 	{
 		color: 'purple',
 		class: 'bg-[#6366F1]',
-		image: '../src/assets/images/purple.jpg', // Access from the public directory
+		image: './images/purple.jpg', // Access from the public directory
 	},
 	{
 		color: 'cyan',
 		class: 'bg-cyan-400',
-		image: '../src/assets/images/cyan.jpg',
+		image: './images/cyan.jpg',
 	},
 	{
 		color: 'blue',
 		class: 'bg-blue-500',
-		image: '../src/assets/images/blue.jpg',
+		image: './images/Blue.jpg',
 	},
 	{
 		color: 'black',
 		class: 'bg-black',
-		image: '../src/assets/images/Blackv2.jpg',
+		image: './images/Blackv2.jpg',
 	},
 ];
 
