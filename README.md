@@ -17,4 +17,12 @@ This project is a conversion of a Figma design into a responsive and pixel-perfe
 ### Running the HTML Version Locally
 1. Clone the repository:
    ```bash
-   git clone [Repository-Link]
+   git clone [https://github.com/sakibxvz/product-app.git]
+
+2. Install dependencies:
+  ```bash
+   npm install
+
+3. Install dependencies:
+  ```bash
+   npm run dev
