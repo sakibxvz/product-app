@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Classy Modern Smart Watch</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			.fade-in {
+				animation: fadeIn 0.3s ease-in-out;
+			}
+			body {
+				font-family: 'Roboto', sans-serif;
+				min-height: 100vh;
+				background-color: white;
+			}
+			@media (max-width: 768px) {
+				body {
+					padding: 1rem;
+				}
+			}
+		</style>
+	</head>
+	<body class="flex justify-center items-center">
+		<div
+			class="product-body mx-auto max-w-[1320px] flex flex-col lg:flex-row gap-6 lg:gap-[60px] p-4 lg:p-0"
+		>
+			<div class="relative w-full lg:w-[630px] aspect-square lg:h-[720px]">
+				<img
+					id="productImage"
+					src="./images/purple.jpg"
+					alt="Smart Watch"
+					class="object-cover w-full h-full fade-in rounded"
+				/>
+			</div>
+
+			<div
+				class="flex flex-col w-full lg:w-auto lg:py-[90px]"
+				id="productDetails"
+			>
+				<h1
+					class="text-[28px] lg:text-[40px] font-bold text-[#364A63] leading-tight lg:leading-[44px] tracking-[-1.2px] py-[12px]"
+				>
+					Classy Modern Smart watch
+				</h1>
+
+				<div class="flex items-center gap-2 pr-[4px] pb-[4px]">
+					<div class="flex gap-[5px]">
+						<i class="fas fa-star text-[#FDB022]"></i>
+						<i class="fas fa-star text-[#FDB022]"></i>
+						<i class="fas fa-star text-[#FDB022]"></i>
+						<i class="fas fa-star text-[#FDB022] opacity-50"></i>
+						<i class="far fa-star text-[#E5E7EB]"></i>
+					</div>
+					<span class="text-sm text-[#8091A7] leading-[23.1px]"
+						>(2 Reviews)</span
+					>
+				</div>
+
+				<div class="flex items-center gap-[5px] pt-[20px]">
+					<span
+						class="text-[#8091A7] text-[16px] lg:text-[20px] font-normal leading-[30px] text-left line-through"
+					>
+						$99.00
+					</span>
+					<span
+						id="currentPrice"
+						class="text-[#6576FF] text-xl lg:text-2xl font-bold leading-8"
+					>
+						$79.00
+					</span>
+				</div>
+
+				<p
+					class="text-[#8091A7] text-base lg:text-[18px] font-normal leading-[1.6] lg:leading-[30px] text-left max-w-[626px] pt-[20px] pr-[4px] gap-2"
+				>
+					I must explain to you how all this mistaken idea of denouncing ple
+					praising pain was born and I will give you a complete account of the
+					system, and expound the actual teaching.
+				</p>
+
+				<div class="grid gap-4 lg:gap-0">
+					<div class="flex gap-[43px] pt-[20px] pr-[4px] flex-wrap">
+						<div class="flex flex-col">
+							<span class="text-[#8091A7] text-sm font-normal leading-[23.1px]"
+								>Type</span
+							>
+							<p class="text-[#364A63] text-base font-bold">Watch</p>
+						</div>
+						<div class="flex flex-col">
+							<span class="text-[#8091A7] text-sm font-normal leading-[23.1px]"
+								>Model Number</span
+							>
+							<p class="text-[#364A63] text-base font-bold">Forerunner 290XT</p>
+						</div>
+					</div>
+
+					<div class="flex flex-col gap-2.5 pt-[20px]">
+						<span class="text-[#364A63] text-lg leading-[20px] font-bold"
+							>Band Color</span
+						>
+						<div class="flex gap-5 mt-[2px] ml-[2px]" id="colorSelector">
+							<button
+								data-color="purple"
+								class="w-4 h-4 rounded-full bg-[#6366F1] ring-2 ring-offset-2 ring-[#6366F1]"
+							></button>
+							<button
+								data-color="cyan"
+								class="w-4 h-4 rounded-full bg-[#06B6D4]"
+							></button>
+							<button
+								data-color="blue"
+								class="w-4 h-4 rounded-full bg-[#3B82F6]"
+							></button>
+							<button
+								data-color="black"
+								class="w-4 h-4 rounded-full bg-[#1F2937]"
+							></button>
+						</div>
+					</div>
+
+					<div class="flex flex-col gap-2.5 pt-[20px]">
+						<span class="text-[#364A63] text-lg leading-[20px] font-bold"
+							>Wrist Size</span
+						>
+						<div class="flex gap-3 flex-wrap" id="sizeSelector">
+							<button
+								data-size="S"
+								class="w-[73px] h-[36px] rounded border border-[#6576FF] bg-[#6366F1]/5"
+							>
+								<span class="text-sm font-bold text-[#6576FF]">S</span>
+								<span class="text-xs text-[#6B7280]">$69</span>
+							</button>
+							<button
+								data-size="M"
+								class="w-[73px] h-[36px] rounded border border-[#E5E7EB]"
+							>
+								<span class="text-sm font-bold text-[#364A63]">M</span>
+								<span class="text-xs text-[#6B7280]">$79</span>
+							</button>
+							<button
+								data-size="L"
+								class="w-[73px] h-[36px] rounded border border-[#E5E7EB]"
+							>
+								<span class="text-sm font-bold text-[#364A63]">L</span>
+								<span class="text-xs text-[#6B7280]">$89</span>
+							</button>
+							<button
+								data-size="XL"
+								class="w-[73px] h-[36px] rounded border border-[#E5E7EB]"
+							>
+								<span class="text-sm font-bold text-[#364A63]">XL</span>
+								<span class="text-xs text-[#6B7280]">$99</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="flex items-center gap-3 pt-[20px] flex-wrap">
+						<div
+							class="flex items-center border border-[#DBDFEA] rounded h-[36px]"
+						>
+							<button
+								id="decreaseQuantity"
+								class="w-[35px] h-[36px] px-2 py-[3px] gap-[10px] border border-[#DBDFEA] flex items-center justify-center hover:bg-gray-50"
+							>
+								<i class="fas fa-minus text-[#8091A7] text-xs"></i>
+							</button>
+							<span
+								id="quantity"
+								class="w-[60px] h-[36px] px-[26px] py-[5px] gap-[10px] border border-[#DBDFEA] text-center text-[#2A323C]"
+								>1</span
+							>
+							<button
+								id="increaseQuantity"
+								class="w-[35px] h-[36px] px-2 py-[3px] gap-[10px] border border-[#DBDFEA] flex items-center justify-center hover:bg-gray-50"
+							>
+								<i class="fas fa-plus text-[#6B7280] text-xs"></i>
+							</button>
+						</div>
+
+						<button
+							id="addToCart"
+							class="h-[36px] w-[105px] bg-[#6366F1] hover:bg-[#6366F1]/90 text-white rounded text-sm font-bold"
+						>
+							Add to Cart
+						</button>
+
+						<button class="h-[19px] w-[16px] flex items-center justify-center">
+							<i class="far fa-heart text-[#6576FF]"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cart Modal -->
+		<div
+			id="cartModal"
+			class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4"
+		>
+			<div
+				class="bg-white rounded-[20px] max-w-[650px] w-full p-4 lg:p-[44px] max-h-[90vh] overflow-y-auto"
+			>
+				<h2 class="text-xl lg:text-2xl font-bold mb-4 text-[#364A63]">
+					Your Cart
+				</h2>
+				<div class="space-y-6">
+					<div class="border-b divide-y">
+						<div
+							class="grid grid-cols-[2fr,1fr,1fr,1fr,1fr] lg:grid-cols-[4fr,1fr,1fr,1fr,1fr] pt-[4px] pb-[8px] pr-[4px] text-sm font-medium text-gray-500"
+						>
+							<div
+								class="text-left text-[14px] text-[#8091A7] font-normal leading-[23.1px]"
+							>
+								Item
+							</div>
+							<div
+								class="text-center text-[14px] leading-[23.1px] font-normal text-[#8091A7]"
+							>
+								Color
+							</div>
+							<div
+								class="text-center text-[14px] leading-[23.1px] font-normal text-[#8091A7]"
+							>
+								Size
+							</div>
+							<div
+								class="text-center text-[14px] leading-[23.1px] font-normal text-[#8091A7]"
+							>
+								Qty
+							</div>
+							<div
+								class="justify-self-end text-right text-[14px] text-[#8091A7] font-normal leading-[23.1px]"
+							>
+								Price
+							</div>
+						</div>
+						<div id="cartItems"></div>
+					</div>
+
+					<div
+						class="grid grid-cols-[2fr,1fr,1fr,1fr,1fr] lg:grid-cols-[4fr,1fr,1fr,1fr,1fr] pt-[4px] pb-[8px] pr-[4px] text-sm font-medium text-gray-500"
+					>
+						<div
+							class="text-left text-[16px] font-extrabold leading-[22px] tracking-[-0.2px] text-[#373737]"
+						>
+							Total
+						</div>
+						<div></div>
+						<div></div>
+						<div class="text-center">
+							<span
+								id="cartTotalItem"
+								class="text-right text-[14px] font-extrabold leading-[22px] tracking-[-0.2px] text-[#364A63]"
+								>0</span
+							>
+						</div>
+						<div
+							class="text-right text-[18px] font-extrabold tracking-[-0.2px] text-[#364A63]"
+							id="cartTotal"
+						>
+							$0.00
+						</div>
+					</div>
+
+					<div class="flex gap-3 lg:gap-6 justify-end flex-wrap">
+						<button
+							id="continueShopping"
+							class="border border-gray-200 py-2 px-[18px] rounded"
+						>
+							<p class="text-[#364A63] font-bold text-sm">Continue Shopping</p>
+						</button>
+						<button
+							id="checkout"
+							class="bg-[#6576FF] hover:bg-[#6576FF]/90 text-white py-2 px-[18px] rounded"
+						>
+							Checkout
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Floating Checkout Button -->
+		<button
+			class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFB732] text-[#2A323C] px-6 py-2 rounded-full shadow-lg hidden lg:flex items-center gap-2 transition-colors"
+		>
+			<span class="text-sm font-bold text-[#364A63]">Checkout</span>
+			<div class="w-6 h-6 bg-white rounded flex items-center justify-center">
+				<span id="floatingCheckoutCount" class="text-sm font-medium">0</span>
+			</div>
+		</button>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
